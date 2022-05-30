@@ -1,0 +1,4 @@
+Suite：实现打包测试。新建一个类把很多测试类放在一起，执行这个新建的类，就会把所有的测试类一起执行。
+Categories：分类执行，可以使用Categories运行器来制定一组测试被包含或排除。
+@IncludeCategory标注要执行的那个分类的方法。
+ExcludeCategory(ClassifyOTests.class)除了运行ClassifyOTests方法之外的方法都运行。
