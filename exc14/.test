@@ -1,0 +1,8 @@
+TestWatcher作为@ClassRule注解字段：
+1、TestWatcher作为@ClassRule注解字段，则该测试类在调用所有的@BeforeClass注解方法之前会调用starting()方法。
+当所有@AfterClass注解方法调用结束后，如果@AfterClass测试通过，则succeeded()方法会被调用；
+如果@AfterClass测试失败，则failed()方法会被调用，如果@AfterClass测试跳过，则skipped()方法被调用。
+最后，finished()方法会被调用。
+2、@ClassRule修饰的变量或方法的修饰符必须为public static
+3、@ClassRule为类级注解，执行单个测试类时只会调用一次被该类注解修饰的Rule
+
