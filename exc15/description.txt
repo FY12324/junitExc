@@ -1,0 +1,7 @@
+TestWatcher-@Rule
+@Test  
+	public void testTestWatcherSkipped() {  
+	    System.out.println("Test Skipped");  
+	    String versionNumber = "10"; 
+		//只有当versionNumber为7才执行测试，否则跳过测试方法
+		Assume.assumeTrue(Integer.valueOf(versionNumber) == 7);
